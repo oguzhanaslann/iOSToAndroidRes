@@ -74,11 +74,6 @@ class Converter {
         val sourceFile = File(dirPath)
         require(sourceFile.exists()) { "File DNE!" }
         require(sourceFile.isDirectory) { "File is not a directory" }
-
-//        val children = sourceFile.listFiles() ?: error("empty source file")
-//        val file1x = children.find { it.name.contains(RESOLUTION_SUFFIX_1_X) } ?: error("_1x file DNE ")
-//        val file2x = children.find { it.name.contains(RESOLUTION_SUFFIX_2_X) } ?: error("_2x file DNE ")
-//        val file3x = children.find { it.name.contains(RESOLUTION_SUFFIX_3_X) } ?: error("_3x file DNE ")
         require(ensureFileCount(sourceFile)) { "size != 3" }
         val children = sourceFile.listFiles() ?: error("empty source file")
         var file1x: File? = null
