@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>iOSToAndroidRes</title>
-</head>
 <body>
   <h1>iOSToAndroidRes</h1>
   <p>iOSToAndroidRes is a project that takes iOS resolution-based files and copies them to the corresponding resolution files in an Android application's resource directory.</p>
