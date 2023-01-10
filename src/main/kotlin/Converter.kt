@@ -40,7 +40,7 @@ class Converter {
         destinationFiles.forEach {
             when {
                 !it.exists() && !generateDirsIfNeeded -> error("file with name ${it.name} DNE!")
-                !it.exists() && generateDirsIfNeeded -> it.createNewFile()
+                !it.exists() && generateDirsIfNeeded -> it.mkdir()
                 else -> Unit // NO-OP
             }
         }
